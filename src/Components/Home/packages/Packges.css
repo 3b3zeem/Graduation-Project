@@ -1,0 +1,152 @@
+.container-Packges-home {
+    width: 100%;
+    margin: 100px auto;
+}
+
+.card-ad-company {
+    width: 90%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: var(--background2);
+    border: 0%;
+    outline: none;
+    margin-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.container-Packges-home .orders-packges .header-packges {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.container-Packges-home .orders-packges .header-packges h3 {
+    color: var(--TextColor);
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    word-spacing: 1px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.card-ad-company .CardOffersHome {
+    border-radius: 25px;
+    background-color: var(--background2);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.card-ad-company .CardOffersHome .image-contentOffer,
+.card-ad-company .CardOffersHome .card-content-offers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+    background-color: var(--background2);
+    width: 100%;
+    height: 50%;
+}
+
+.card-ad-company .CardOffersHome .image-contentOffer {
+    position: relative;
+    row-gap: 5px;
+    padding: 25px 0;
+}
+
+.card-ad-company .CardOffersHome .image-contentOffer .overlayOffers {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #59815b;
+    border-radius: 25px 25px 0 25px;
+}
+
+.card-ad-company .CardOffersHome .image-contentOffer .overlayOffers::before,
+.card-ad-company .CardOffersHome .image-contentOffer .overlayOffers::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    height: 40px;
+    width: 40px;
+    background-color: #59815b;
+}
+
+.card-ad-company .CardOffersHome .image-contentOffer .overlayOffers::after {
+    border-radius: 0 25px 0 0;
+    background-color: var(--background2);
+}
+
+.card-ad-company .CardOffersHome .image-contentOffer .card-imageOffers {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: var(--background2);
+    padding: 3px;
+}
+
+.card-ad-company .CardOffersHome .image-contentOffer .card-imageOffers .card-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #59815b;
+}
+
+.card-content-offers .name-offers {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--TextColor2);
+    width: 100%;
+    height: 15%;
+    text-align: center;
+}
+
+.card-content-offers .description-offers {
+    font-size: 14px;
+    color: var(--TextColor2);
+    text-align: center;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+}
+
+.button-offers {
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px 16px;
+    background-color: #313131;
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.button-offers:hover {
+    background-color: #59815b;
+}
+
+.show-more {
+    background-color: #59815b !important;
+}

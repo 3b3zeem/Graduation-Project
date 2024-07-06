@@ -1,0 +1,89 @@
+.swiper-trip {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 450px;
+}
+
+.swiper-trip .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 250px;
+}
+
+.swiper-trip .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 450px;
+}
+
+.trip {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.trip .title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.trip .title h1 {
+    color: var(--PrimaryColor);
+    font-size: 3rem;
+    margin: 2rem;
+}
+
+.trip .title p {
+    color: var(--TextColor);
+    width: 50%;
+    /* margin: 0 auto; */
+}
+
+.trip .title a {
+    font-size: 15px;
+    border-radius: 0px;
+    text-align: center;
+    background-color: var(--grayText);
+    padding: 1.3rem 2rem;
+    transition: 0.3s ease-in-out;
+}
+
+.trip .title a:hover {
+    color: var(--WhiteColor);
+    background-color: var(--PrimaryColor);
+}
+
+@media (max-width: 900px) {
+    .trip {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .trip .title p {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .trip .title h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .trip .title p {
+        font-size: 12px;
+    }
+
+    .trip .title h1 {
+        font-size: 2rem;
+    }
+
+    .trip .title a{
+        padding: .7rem 1.4rem;
+    }
+}

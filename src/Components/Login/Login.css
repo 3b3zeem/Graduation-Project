@@ -1,0 +1,259 @@
+.background-all {
+    background-color: #fff !important;
+}
+
+.Login-block {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+}
+
+.Login-block .left_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #44576d;
+}
+
+.circle-gif {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: none;
+    z-index: 2;
+    top: 20px;
+    right: 50px;
+}
+
+.abstract-gif1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background: none;
+    top: 30px;
+    right: 600px;
+    z-index: 2;
+}
+
+.left_side .image-contant-login {
+    width: 50%;
+    padding: 50px;
+    height: 50%;
+    margin-top: 30px;
+    background-image: url(../../im&ve/home-art.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    /* z-index: 100; */
+}
+
+.Container-Login {
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.Login-block .left_side .contant-above-login {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    z-index: 100;
+}
+
+.Login-block .left_side .contant-above-login .big-text {
+    font-size: 32px;
+    font-weight: bolder;
+    color: var(--inputfeild);
+}
+
+.Login-block .left_side .contant-above-login .small-text {
+    font-size: 16px;
+    width: 80%;
+    line-height: 25px;
+    text-transform: capitalize;
+    color: var(--inputfeild);
+}
+
+.btn-ready-login {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background: var(--PrimaryColor);
+    color: #fafafa;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+@media (max-width: 1400px) {
+    .contant-above-login .small-text {
+        font-size: 14px;
+    }
+
+    .contant-above-login .big-text {
+        font-size: 25px;
+    }
+
+    .left_side .image-contant-login {
+        width: 70%;
+    }
+
+    .circle-gif {
+        display: none;
+    }
+
+    .abstract-gif1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .left_side {
+        width: 80%;
+    }
+
+    .contant-above-login {
+        width: 70%;
+    }
+
+    .Login-block .left_side .contant-above-login .small-text {
+        font-size: 18px;
+    }
+
+    .Login-block .left_side .contant-above-login .big-text {
+        font-size: 30px;
+        width: 80%;
+    }
+
+    .left_side .image-contant-login {
+        width: 65%;
+    }
+
+    .circle-gif {
+        display: none;
+    }
+
+    .abstract-gif1 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .Login-block .left_side .contant-above-login .small-text {
+        font-size: 15px;
+        width: 80%;
+    }
+
+    .Login-block .left_side .contant-above-login .big-text {
+        font-size: 25px;
+    }
+
+    .left_side .image-contant-login {
+        width: 70%;
+    }
+
+    .circle-gif {
+        display: none;
+    }
+
+    .abstract-gif1 {
+        display: none;
+    }
+}
+
+@media (max-width: 830px) {
+    .Login-block .left_side .contant-above-login .small-text {
+        font-size: 13px;
+    }
+
+    .Login-block .left_side .contant-above-login .big-text {
+        font-size: 25px;
+        width: 80%;
+    }
+
+    .left_side .image-contant-login {
+        width: 70%;
+    }
+
+    .circle-gif {
+        display: none;
+    }
+
+    .abstract-gif1 {
+        display: none;
+    }
+}
+
+
+@media (max-width: 560px) {
+    .Login-block {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .left_side{
+        width: 100%;
+    }
+
+    .left_side .image-contant-login {
+        display: none;
+    }
+
+    .Login-block .left_side .contant-above-login .small-text {
+        font-size: 13px !important;
+        width: 80%;
+    }
+
+    .Login-block .left_side .contant-above-login .big-text {
+        font-size: 20px !important;
+        width: 80%;
+    }
+
+    .circle-gif {
+        display: none;
+    }
+
+    .abstract-gif1 {
+        display: none;
+    }
+}
+
+.signup-container {
+    text-align: center;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;    
+    margin-top: 20px;
+}
+
+.line {
+    flex: 1;
+    border: none;
+    height: 1.5px;
+    background-color: #777777;
+    margin: 0 10px;
+}
+
+.or-text {
+    color: #aaa;
+    font-size: 17px;
+}

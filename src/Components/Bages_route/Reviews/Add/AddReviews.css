@@ -1,0 +1,141 @@
+.all-reviews-con {
+    height: 100vh;
+}
+
+.all-reviews-con .container-contant-Review {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contant-Review .ad-title-rev {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--TextColor);
+}
+
+.container-contant-Review .form-add-rev {
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: var(--input2);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+
+.container-contant-Review .form-add-rev .image-of-contact-rev {
+    width: 35%;
+    background-image: url("../../../../im&ve/sidenav2.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-contant-Review .form-add-rev .image-of-contact-rev h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30%;
+    color: #f9f9f9;
+    text-align: center;
+}
+
+.container-contant-Review .form-add-rev .image-of-contact-rev p {
+    font-size: 18px;
+    text-align: center;
+    color: #f9f9f9;
+}
+
+.container-contant-Review .form-add-rev .contant-of-add-rev {
+    width: 65%;
+}
+
+.form-add-rev .contant-of-add-rev .coll-add-rev {
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.form-add-rev .contant-of-add-rev .coll-add-rev .form-label-add-rev {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--TextColor);
+}
+
+.form-add-rev .contant-of-add-rev .coll-add-rev .only-input {
+    width: 45%;
+}
+
+.form-add-rev .contant-of-add-rev .coll-add-rev .input-feild6 {
+    width: 100%;
+    margin: 0.2rem auto;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px 5px;
+    font-size: 18px;
+    text-align: left;
+    background:var(--inputfeild);
+}
+
+
+.form-add-rev .contant-of-add-rev .coll-add-rev .input-feild6::placeholder {
+    padding-left: 5px;
+}
+
+.all-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-add-rev .contant-of-add-rev .coll-add-rev .btn-readyc4 {
+    width: 60%;
+    height: 3rem;
+    border: 2px solid var(--PrimaryColor);
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1.5rem;
+    background: none;
+    color: var(--TextColor2);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+.form-add-rev .contant-of-add-rev .coll-add-rev .btn-readyc4:hover {
+    background-color: var(--background3);
+    color: var(--background);
+    border: none;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-3px);
+    transform: scale(3px);
+}

@@ -1,0 +1,346 @@
+.container-company {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 4;
+    margin-top: 30px;
+}
+
+.row-company {
+    font-family: tahoma;
+    height: 260px;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 22%;
+    width: 22%;
+    margin: 8px;
+}
+
+.our-team {
+    border-radius: 15px;
+    padding: 20px 0 10px;
+    text-align: center;
+    background-color: #59815b;
+    overflow: hidden;
+    position: relative;
+}
+
+.our-team .picture {
+    display: inline-block;
+    height: 130px;
+    width: 130px;
+    z-index: 1;
+    position: relative;
+}
+
+.our-team .picture::before {
+    content: "";
+    width: 100%;
+    height: 0;
+    border-radius: 50%;
+    background-color: var(--TextColor);
+    position: absolute;
+    bottom: 135%;
+    right: 0;
+    left: 0;
+    opacity: 0.9;
+    transform: scale(3);
+    transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+    height: 100%;
+}
+
+.our-team .picture::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--TextColor);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.our-team .picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.7);
+}
+
+.our-team .team-content p{
+    color: var(--inputfeild);
+    font-size: 15px;
+}
+
+.our-team .fontFire {
+    font-family: "Trirong", serif;
+    font-size: 20px;
+    color: var(--inputfeild);
+    margin: 10px 0px;
+    text-decoration: none !important;
+
+}
+
+.companyImg {
+    height: 70vh;
+    background: url('../../../im&ve/partners-opt.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.companyImg .secCompany {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.companyImg .secCompany .TextCompany {
+    text-align: center;
+    width: 70%;
+
+}
+
+.companyImg .secCompany .TextCompany .titleCompany {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.companyImg .secCompany .TextCompany .subTitleCompany {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 1rem 0;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+#search {
+    display: grid;
+    grid-area: search;
+    grid-template:
+        "search" 60px
+        / 420px;
+    justify-content: center;
+    align-content: center;
+    justify-items: stretch;
+    align-items: stretch;
+    background: var(--background2);
+}
+
+#search input {
+    display: block;
+    grid-area: search;
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: var(--inputfeild);
+    padding: 0 30px 0 30px;
+    border: none;
+    border-radius: 10px;
+    font: 23px system-ui, sans-serif;
+    color: var(--text-primary2);
+}
+
+#search input::placeholder{
+    font-size: 20px;
+}
+
+#search svg {
+    grid-area: search;
+    overflow: visible;
+    color: var(--grayText);
+    fill: none;
+    stroke: currentColor;
+}
+
+.input-company:is(:focus, :active){
+    outline: none;
+    border: none;
+    
+}
+
+.spark {
+    fill: currentColor;
+    stroke: none;
+    r: 15;
+}
+
+.spark:nth-child(1) {
+    animation: spark-radius 2.03s 1s both, spark-one-motion 2s 1s both;
+}
+
+@keyframes spark-radius {
+    0% {
+        r: 0;
+        animation-timing-function: cubic-bezier(0, 0.3, 0, 1.57);
+    }
+
+    30% {
+        r: 10;
+        animation-timing-function: cubic-bezier(1, -0.39, 0.68, 1.04);
+    }
+
+    95% {
+        r: 7;
+    }
+
+    99% {
+        r: 6;
+    }
+
+    99.99% {
+        r: 5;
+    }
+
+    100% {
+        r: 0;
+    }
+}
+
+@keyframes spark-one-motion {
+    0% {
+        transform: translate(-20%, 50%);
+        animation-timing-function: cubic-bezier(0.63, 0.88, 0, 1.25);
+    }
+
+    20% {
+        transform: rotate(-0deg) translate(0%, -50%);
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        transform: rotate(-230deg) translateX(-20%) rotate(-100deg) translateX(15%);
+        animation-timing-function: linear;
+    }
+
+    100% {
+        transform: rotate(-360deg) translate(30px, 100%);
+        animation-timing-function: cubic-bezier(0.64, 0.66, 0, 0.51);
+    }
+}
+
+.spark:nth-child(2) {
+    animation: spark-radius 2.03s 1s both, spark-two-motion 2.03s 1s both;
+}
+
+@keyframes spark-two-motion {
+    0% {
+        transform: translate(120%, 50%) rotate(-70deg) translateY(0%);
+        animation-timing-function: cubic-bezier(0.36, 0.18, 0.94, 0.55);
+    }
+
+    20% {
+        transform: translate(90%, -80%) rotate(60deg) translateY(-80%);
+        animation-timing-function: cubic-bezier(0.16, 0.77, 1, 0.4);
+    }
+
+    40% {
+        transform: translate(110%, -50%) rotate(-30deg) translateY(-120%);
+        animation-timing-function: linear;
+    }
+
+    70% {
+        transform: translate(100%, -50%) rotate(120deg) translateY(-100%);
+        animation-timing-function: linear;
+    }
+
+    80% {
+        transform: translate(95%, 50%) rotate(80deg) translateY(-150%);
+        animation-timing-function: cubic-bezier(0.64, 0.66, 0, 0.51);
+    }
+
+    100% {
+        transform: translate(100%, 50%) rotate(120deg) translateY(0%);
+    }
+}
+
+.spark:nth-child(3) {
+    animation: spark-radius 2.05s 1s both, spark-three-motion 2.03s 1s both;
+}
+
+.bar {
+    width: 100%;
+    height: 100%;
+    ry: 10px;
+    stroke-width: 5;
+    animation: bar-in 900ms 3s both;
+}
+
+@keyframes bar-in {
+    0% {
+        stroke-dasharray: 0 180 0 226 0 405 0 0;
+    }
+
+    100% {
+        stroke-dasharray: 0 0 181 0 227 0 405 0;
+    }
+}
+
+.magnifier {
+    animation: magnifier-in 600ms 3.6s both;
+    transform-box: fill-box;
+}
+
+@keyframes magnifier-in {
+    0% {
+        transform: translate(20px, 8px) rotate(-45deg) scale(0.01, 0.01);
+    }
+
+    50% {
+        transform: translate(-4px, 8px) rotate(-45deg);
+    }
+
+    100% {
+        transform: translate(0px, 0px) rotate(0deg);
+    }
+}
+
+.magnifier .glass {
+    cx: 27;
+    cy: 27;
+    r: 8;
+    stroke-width: 3;
+}
+
+.magnifier .handle {
+    x1: 32;
+    y1: 32;
+    x2: 44;
+    y2: 44;
+    stroke-width: 3;
+}
+
+#results {
+    grid-area: results;
+    background: hsl(0, 0%, 95%);
+}

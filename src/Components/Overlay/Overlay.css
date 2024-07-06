@@ -1,0 +1,64 @@
+.overlay{
+    backdrop-filter: blur(10px);
+    background-color: var(--background2);
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    align-items: center;
+    overflow:scroll; 
+}
+.overlay .overlay-background .overlay-container .cloase {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding: 0%;
+    margin: 0%;
+}
+.overlay .overlay-background .overlay-container .cloase .icon .img{
+    cursor: pointer;
+    font-size: 50px;
+} 
+
+@media (max-width: 600px){
+    .overlay .overlay-background .overlay-container .cloase {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .overlay .overlay-background .overlay-container .cloase .icon .img{
+        background-color: #ffffff;
+        border-radius: 50px;
+    }
+    .overlay .overlay-background .overlay-container .cloase .icon .img:hover{
+        background-color: #adadad;
+    }
+    
+}
+@media (max-width: 800px){
+    .cloase {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .overlay .overlay-background .overlay-container .cloase .icon .img{
+        background-color: #ffffff;
+        border-radius: 50px;
+    }
+    .overlay .overlay-background .overlay-container .cloase .icon .img:hover{
+        background-color: #adadad;
+    }
+    
+    
+}
+
+
+

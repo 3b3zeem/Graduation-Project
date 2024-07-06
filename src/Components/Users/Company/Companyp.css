@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Ruda:wght@400;600;700&display=swap");
+
+:root {
+  --light: #f6f6f9;
+  --primary: #1976d2;
+  --light-primary: #cfe8ff;
+  --grey: #eee;
+  --dark-grey: #aaaaaa;
+  --dark: #363949;
+  --danger: #d32f2f;
+  --light-danger: #fecdd3;
+  --warning: #fbc02d;
+  --light-warning: #fff2c6;
+  --success: #388e3c;
+  --light-success: #bbf7d0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.all-c {
+  font-family: "poppins", sans-serif;
+  background-color: var(--background2);
+  padding-top: 100px;
+  height: 100vh;
+}
+
+.bx {
+  font-size: 1.7rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.all-c .App-company .sidebar-company {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--input2);
+  width: 230px;
+  height: 100%;
+  z-index: 2;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+  transition: all 0.3s ease-in;
+  padding-top: 50px;
+}
+
+.sidebar-company .side-menu {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 5rem;
+  height: 60vh;
+  padding: 0px;
+}
+
+.sidebar-company .side-menu li {
+  margin: 0.5rem 0;
+  height: 3rem;
+  width: 100%;
+  outline: none;
+  padding-left: 10px;
+  cursor: pointer;
+  background: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-left: 6px solid var(--success);
+  text-decoration: none;
+  z-index: 10;
+}
+.sidebar-company .side-menu li .Icons {
+  font-size: 20px;
+  margin: 0px 5px;
+}
+.sidebar-company .side-menu li:hover {
+  background-color: var(--dark);
+  color: rgb(255, 255, 255);
+  transition: 0.3s ease-in-out;
+  transform: translateY(-3px);
+  transform: scale(3px);
+  border: none;
+  outline: none;
+  z-index: 11;
+}
+
+.sidebar-company .side-menu li:hover a {
+  color: rgb(255, 255, 255);
+}
+
+.bx-side {
+  font-size: 1.7rem;
+  padding-right: 5px;
+}
+
+.sidebar-company .side-menu li a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  white-space: nowrap;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  color: var(--TextColor2);
+  padding: 5px;
+}
+
+.sidebar-company .side-menu li.active a {
+  color: var(--success);
+}
+
+.sidebar-company .side-menu {
+  .images {
+    width: 120px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 30px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+    }
+
+    p{
+        color: var(--TextColor);
+        font-size: 20px;
+    }
+  }
+}
+
+.sidebar-company .side-menu li a .bx {
+  min-width: calc(80px - 20px);
+  display: flex;
+  justify-content: center;
+  font-size: 1.7rem;
+}
+
+.all-c .content {
+  position: relative;
+  width: calc(100% - 260px);
+  height: 100%;
+  left: 260px;
+  transition: all 0.3s ease;
+}
+
+.sidebar-company.close ~ .content {
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
+main {
+  width: 100%;
+  padding: 2.2rem 1.5rem;
+  height: 100%;
+}
+
+main .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .header .header-text {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  color: var(--TextColor2);
+}
+
+main .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+main .cards .card-list {
+  padding: 1.8rem;
+  background-color: var(--input2);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  grid-gap: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: rgba(0, 0, 0, 0.066) 0px 5px 10px 0px;
+}
+
+main .cards li:hover {
+  transform: translateY(-10px);
+}
+
+main .cards li .bx {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 10px;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .cards li:nth-child(1) .bx {
+  background-color: var(--light-primary);
+  color: var(--primary);
+}
+
+main .cards li:nth-child(2) .bx {
+  background-color: var(--light-warning);
+  color: var(--warning);
+}
+
+main .cards li:nth-child(3) .bx {
+  background-color: var(--light-danger);
+  color: var(--danger);
+}
+
+main .cards li:nth-child(4) .bx {
+  background-color: var(--light-success);
+  color: var(--success);
+}
+
+main .cards li .info h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--TextColor2);
+}
+
+main .cards li .info p {
+  color: var(--TextColor2);
+}
+
+.all-c .content main .bottom_data {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  grid-gap: 24px;
+  margin-top: 24px;
+  color: var(--dark);
+}
+
+.all-c .content main .bottom_data > div {
+  border-radius: 10px;
+  background-color: var(--input2);
+  padding: 24px;
+  overflow-x: auto;
+}
+
+main .bottom_data .header {
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+  margin-bottom: 24px;
+}
+
+main .bottom_data .header h3 {
+  font-size: 24px;
+  font-weight: 600px;
+}
+
+main .bottom_data .orders {
+  flex-grow: 1;
+  flex-basis: 500;
+  box-shadow: rgba(0, 0, 0, 0.066) 0px 5px 10px 0px;
+}
+
+main .bottom_data .orders table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+main .bottom_data .orders table .table-th {
+  padding: 12px 10px;
+  font-size: 1rem;
+  text-align: left;
+  border-bottom: 2px solid var(--grey);
+  background-color: var(--background2);
+  color: var(--TextColor2);
+}
+
+main .bottom_data .orders table td {
+  padding: 12px 10px;
+}
+
+.all-c .content main .bottom_data .orders table .img_content {
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+  padding-left: 6px;
+}
+
+.all-c .content main .bottom_data table td img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.all-c .content main .bottom_data .orders table tbody tr {
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.all-c .content main .bottom_data .orders table tbody tr:nth-child(even) {
+  background-color: var(--background2);
+  color: var(--TextColor2);
+}
+
+.all-c .content main .bottom_data .orders table tbody tr:nth-child(odd) {
+  background-color: var(--TextColor);
+  color: var(--background2);
+}
+
+.all-c .content main .bottom_data .orders table td .status {
+  font-size: 10px;
+  padding: 6px 16px;
+  color: var(--light);
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+main .bottom_data .reminders {
+  flex-grow: 1;
+  flex-basis: 300px;
+  background-color: var(--input2);
+  box-shadow: rgba(0, 0, 0, 0.066) 0px 5px 10px 0px;
+}
+
+main .bottom_data .reminders .task_list {
+  width: 100%;
+}
+
+main .bottom_data .reminders .task_list li {
+  width: 100%;
+  margin-bottom: 16px;
+  background-color: var(--background2);
+  color: var(--TextColor2);
+  padding: 14px 10px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.066) 0px 5px 10px 0px;
+}
+
+main .bottom_data .reminders .task_list li .task_title {
+  display: flex;
+  align-items: center;
+}
+
+main .bottom_data .reminders .task_list li .task_title p {
+  font-size: 15px;
+  margin-left: 6px;
+}
+
+main .bottom_data .reminders .task_list li.completed {
+  border-left: 5px solid var(--success);
+}
+
+.orders .table-ads {
+  background-color: var(--background2);
+  color: var(--TextColor2);
+  padding: 10px;
+  max-height: 500px;
+}
+
+.orders .table-ads .table-body {
+  background-color: var(--background2);
+}
+
+.table-cell {
+  flex: 1;
+  /* Each cell occupies equal width */
+  overflow: hidden;
+  /* Hide overflow content */
+  text-overflow: ellipsis;
+  /* Show ellipsis for overflow text */
+  /* white-space: nowrap; */
+  /* Prevent wrapping */
+  padding: 8px;
+  /* Adjust padding as needed */
+}
+
+@media (max-width: 768px) {
+  .sidebar-company {
+    width: 200px;
+  }
+
+  .all-c .content {
+    width: calc(100% - 60px);
+    left: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  main .cards {
+    grid-template-columns: 1fr;
+  }
+
+  main .bottom_data .header {
+    min-width: 340px;
+  }
+
+  main .bottom_data .orders table {
+    min-width: 340px;
+  }
+
+  main .bottom_data .reminders .task_list {
+    min-width: 340px;
+  }
+}
+
+.card-ad-company {
+  width: 90%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border: 0%;
+  outline: none;
+}

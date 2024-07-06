@@ -1,0 +1,203 @@
+.con-add-ad {
+    border: 1px solid var(--background);
+}
+
+.container-contant-add {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-contant-add .ad-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--TextColor);
+
+}
+
+.container-contant-add .form-add-ad {
+    width: 75%;
+    margin: 30px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: var(--input2);
+}
+
+.container-contant-add .form-add-ad .image-of-contact-ad{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../../../im&ve/sidenav2.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 20px;
+}
+
+.drop-container {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px dashed #555;
+    color: #444;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.drop-container:hover {
+    background: #eee;
+    border-color: #111;
+}
+
+.drop-container:hover input[type="file"]{
+    color: #222;
+}
+
+.drop-container:hover .drop-title {
+    color: #222;
+}
+
+.drop-title {
+    color: var(--inputfeild);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+}
+
+.container-contant-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-add-ad input[type="file"] {
+    color: var(--inputfeild);
+    width: 350px;
+    max-width: 100%;
+    color: #444;
+    padding: 5px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+.form-add-ad input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  input[type=file]::file-selector-button:hover {
+    background: #0d45a5;
+  }
+
+.contant-of-add-ad {
+    width: 100%;
+}
+
+.container-contant-add .contant-of-add-ad {
+    width: 65%;
+    padding: 20px;
+
+}
+
+.container-contant-add .contant-of-add-ad .coll-add {
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.container-contant-add .contant-of-add-ad .coll-add .form-label-add {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--TextColor);
+}
+
+.container-contant-add .contant-of-add-ad .coll-add .only-input {
+    width: 45%;
+}
+
+.container-contant-add .contant-of-add-ad .coll-add .input-feild6 {
+    width: 100%;
+    margin: 0.2rem auto;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px 5px;
+    font-size: 18px;
+    text-align: left;
+    background: var(--inputfeild);
+
+}
+
+.container-contant-add .contant-of-add-ad .coll-add .input-feild6::placeholder {
+    padding-left: 5px;
+}
+
+.all-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contant-add .contant-of-add-ad .coll-add .btn-readyc4 {
+    width: 60%;
+    height: 3rem;
+    border: 2px solid var(--PrimaryColor);
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1.5rem;
+    background: none;
+    color: var(--TextColor2);
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px auto;
+    
+}
+
+.container-contant-add .contant-of-add-ad .coll-add .btn-readyc4:hover {
+    background-color: var(--background3);
+    color: var(--background);
+    border: none;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-3px);
+    transform: scale(3px);
+}

@@ -1,0 +1,172 @@
+.container-wishlist {
+    width: 100%;
+    padding-top: 80px;
+    background: var(--background2);
+    transition: 0ms;
+}
+
+.toptop {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: var(--input2);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 100%;
+    padding: 30px;
+}
+
+.back-ground-wish {
+    width: 100%;
+    height: 150px;
+    background-color: var(--PrimaryColor);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.heart {
+    width: 100px;
+    height: 100%;
+}
+
+.back-ground-wish h1 {
+    color: var(--inputfeild);
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.aaaaaaaa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+}
+
+.icons-wish {
+    font-size: 20px;
+}
+
+.aaaaaaaa span {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card-wishlist {
+    width: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+}
+
+
+.wrapper {
+    max-width: 900px;
+    /* height: 200px; */
+    margin: 20px auto;
+    background-color: var(--input2);
+}
+
+div.text-uppercase {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+
+.table-responsive{
+    background: var(--input2);
+}
+
+.table {
+    overflow: hidden;
+}
+
+.table thead tr th {
+    letter-spacing: 0.08rem;
+    font-weight: normal;
+    background-color: var(--input2);
+    color: var(--TextColor2);
+}
+
+.table tr td,
+.table tr th {
+    border: none;
+    text-align: center;
+}
+
+.table thead {
+    border-bottom: 1px solid var(--PrimaryColor);
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.table thead {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.table tbody td.item {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: left;
+    background-color: var(--input2);
+    color: var(--TextColor);
+}
+
+.table thead th.header {
+    text-align: left;
+}
+
+.table tbody tr {
+    padding-top: 10px;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc;
+    transition: all .4s ease-in-out;
+}
+
+.table tbody tr:last-child {
+    border: none;
+}
+
+td .close{
+    opacity: 0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--PrimaryColor);
+    display: flex;
+    gap: 4;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.table tbody tr:hover {
+    transform: scale(1.004);
+    box-shadow: 2px 2px 10px #a5a5a5;
+    cursor: pointer;
+    overflow: hidden;
+    scroll-behavior: unset;
+}
+
+.table tbody tr:hover .close {
+    font-size: 2rem;
+    opacity: 1;
+}
+
+.table tbody tr:hover .close:hover span{
+    opacity: .7;
+}
+
+@media(max-width:400px) {
+    .close {
+        font-size: 0.7rem;
+        font-weight: normal;
+        opacity: 1;
+    }
+
+    .wrapper {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,126 @@
+.section{
+    width: 100%;
+    margin: 4rem auto;
+    background-color: var(--background2);
+}
+
+@media screen and (min-width: 992px) {
+    .section{
+        width: 95vw;
+    }
+}
+
+.section-center{
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 100vw;
+    height: 350px;
+    max-width: 1000px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+
+article{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all .3s linear;
+}
+
+article.activeSlide{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+article.lastSlide{
+    transform: translateX(-100%);
+}
+
+article.nextSlide{
+    transform: translateX(100%);
+}
+
+.person-img{
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid var(--text-primary);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+article h4{
+    text-transform: uppercase;
+    color: var(--text-primary);
+    margin-bottom: .25rem;
+}
+
+article .rating{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.5rem;
+}
+
+article .rating .quot-icon{
+    font-size: 20px;
+    color: var(--text-primary);
+    }
+
+article .rating .star{
+    font-size: 20px;
+    color: rgb(255, 217, 0);
+}
+
+.title-2{
+    text-transform: capitalize;
+    margin-bottom: .75rem;
+    color: var(--text-primary);
+    text-align: center;
+}
+
+.text{
+    max-width: 35em;
+    margin: 0 auto;
+    line-height: 2;
+    color: var(--text-primary);
+}
+
+.prev,
+.next{
+    position: absolute;
+    top: 170px;
+    transform: translateY(-50%);
+    display: grid;
+    background-color: var(--background2);
+    color: var(--text-primary);
+    place-items: center;
+    border-color: transparent;
+    font-size: 2.5rem;
+    border-radius: .25rem;
+    cursor: pointer;
+    transition: all .3s linear;
+}
+
+.prev{
+    left: 0;
+    margin-left: 15px;
+}
+
+.next{
+    right: 0;
+    margin-right: 15px;
+}
+
+@media (min-width: 800px) {
+    .text{
+        max-width: 45rem;
+    }
+}

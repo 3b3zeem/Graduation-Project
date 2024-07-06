@@ -1,0 +1,60 @@
+.details {
+    width: 80%;
+}
+
+.details .download {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details .download button {
+    margin-right: 6%;
+    padding: 10px 15px;
+}
+
+.details .left {
+    margin: 0px 2rem 0px 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.details .left .form-right,
+.details .left .form-left {
+    width: 50%;
+}
+
+.details .left .form-right {
+    padding-left: 5px;
+    /* border-left: 1px solid var(--PrimaryColor); */
+}
+
+.btnChange {
+    display: flex;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+.btnChange button:nth-child(2) {
+    background-color: #C40C0C;
+}
+
+.btnChange button:nth-child(2):hover {
+    background-color: var(--inputfeild);
+}
+
+.left .form-left .current h3,
+.left .form-right .current h3 {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.left .form-left .current h3 span,
+.left .form-right .current h3 span {
+    font-size: 15px;
+    color: var(--TextColor);
+}

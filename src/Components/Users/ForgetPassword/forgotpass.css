@@ -1,0 +1,15 @@
+.containChange {
+    .forgot {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        h1 {
+            p {
+                margin-left: 0px;
+            }
+        }
+    }
+}

@@ -1,0 +1,126 @@
+.con-Edit-offers {
+    border: 1px solid var(--background);
+    height: 100vh;
+}
+.container-contant-Edit-offers {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container-contant-Edit-offers .offers-title-edit-off {
+    width: 100%;
+    margin: 50px auto;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--TextColor);
+}
+.container-contant-Edit-offers .form-Edit-offers-off {
+    width: 75%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background: var(--input2);
+}
+.form-Edit-offers-off .image-of-contact-offers-edit-off {
+    width: 35%;
+    background-image: url("../../../../im&ve/sidenav2.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.form-Edit-offers-off .image-of-contact-offers-edit-off h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10%;
+    color: var(--TextColor2);
+    text-align: center;
+}
+.form-Edit-offers-off .image-of-contact-offers-edit-off p {
+    font-size: 18px;
+    text-align: center;
+    color: var(--TextColor2);
+}
+.form-Edit-offers-off .contant-of-Edit-offers {
+    width: 65%;
+}
+.contant-of-Edit-offers .coll-Edit-offers {
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+.contant-of-Edit-offers .coll-Edit-offers .form-label-edit {
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--TextColor);
+}
+.contant-of-Edit-offers .coll-Edit-offers .only-input-edit {
+    width: 45%;
+}
+.contant-of-Edit-offers .coll-Edit-offers .input-feild7 {
+    width: 100%;
+    margin: 0.2rem auto;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 5px;
+    outline: none;
+    padding: 8px 5px;
+    font-size: 18px;
+    text-align: left;
+    background: var(--inputfeild);
+}
+.contant-of-Edit-offers .coll-Edit-offers .input-feild7::placeholder {
+    padding-left: 5px;
+}
+.contant-of-Edit-offers .coll-Edit-offers .all-btn-edit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contant-of-Edit-offers .coll-Edit-offers .btn-readyc5 {
+    width: 60%;
+    height: 3rem;
+    border: 2px solid #000;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1.5rem;
+    background: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+.contant-of-Edit-offers .coll-Edit-offers .btn-readyc5:hover {
+    background-color: var(--background3);
+    color: var(--background);
+    border: none;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-3px);
+    transform: scale(3px);
+}

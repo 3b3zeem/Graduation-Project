@@ -1,0 +1,17 @@
+.containChange .verify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.containChange .verify h1 {
+    font-size: 15px;
+    opacity: .7;
+}
+
+.containChange .verify img {
+    width: 200px;
+    height: 200px;
+}

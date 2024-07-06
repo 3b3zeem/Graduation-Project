@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --background: #fff;
+  --background2: #f9f9f9;
+  --background3: #44576d;
+  --text-primary: #222;
+  --text-primary2: #3e3e3f;
+  --purple:#9179e7;
+  --PrimaryColor:  hsl(199, 100%, 33%);
+  --PrimaryColor3:hsl(0, 0%, 0%);
+  --input3: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --WhiteColor: hsl(0, 0%, 100%);
+  --BlackColor: hsl(201, 33%, 16%);
+  --BlackColor2:hsl(199, 44%, 93%);
+  --input: rgb(190, 190, 190);
+  --input2: #f9f9f9;
+  --TextColor: hsl(240, 4%, 36%);
+  --TextColor2: rgb(41, 41, 41);
+  --grayText: rgb(190, 190, 190);
+  --inputColor: rgb(239, 239, 239);
+  --inputColor3: rgb(239, 239, 239);
+  --cardBG: rgb(255, 255, 235);
+  --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  --box-shadow: 0 5px 25px rgba(0 0 0 / 20%);
+  --backgroundad:#eef6fa;
+  --boxofad: rgb(212, 213, 215) 3px 3px 6px 0px inset,
+  rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  --sidebarofbooking:#dddddd;
+  --inputfeild:#f0f1ff;
+  --TextColo3: rgb(0, 0, 0);
+  --danger: #C40C0C;
+}
+
+[data-theme='dark'] {
+  --background: #222;
+  --background2: #151f20;
+  --background3: #dfe8f6;
+  --backgroundad:#253739;
+  --text-primary: #fff;
+  --text-primary2: #fafafa;
+  --PrimaryColor3:hsl(199, 100%, 44%);
+  --input:#253739;
+  --input2:#253739;
+  --BlackColor: hsl(200, 75%, 67%);
+  --BlackColor2:#253739;
+  --PrimaryColor:hsl(199, 100%, 44%);
+  --TextColor: rgb(190, 190, 190);
+  --TextColor2: rgb(245, 245, 245);
+  --TextColo3: rgb(0, 0, 0);
+  --inputColor3: #151f208d;
+  --boxofad: rgb(0, 0, 0) 3px 3px 6px 0px inset,
+  rgba(0, 0, 0, 0.5) -3px -3px 6px 1px inset;
+  --sidebarofbooking:#253739;
+  --inputfeild:#dddddd;
+  --danger: #c40c0c44;
+  --input3: #253739;
+  --WhiteColor: #253739;
+}
+
+.App {
+  color: var(--text-primary);
+  background-color: var(--background2);
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Montserrat;
+  transition: 0.3s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+p {
+  font-size: 0.810rem;
+}
+
+a{
+  text-decoration: none;
+}
+
+html {
+  font-size: 90%;
+}
+
+li {
+  list-style-type: none;
+}
+
+.icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+img,
+video {
+  height: auto;
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 3rem;
+  padding: 0.6rem 1.5rem;
+}
+
+.btn:hover {
+  transition: 0.3s ease;
+  color: #fff;
+  background: #292626;
+}
+
+input {
+  font-size: 100%;
+}
+
+.secTitle {
+  display: none;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 25px;
+  color: hsl(0, 0, 0);
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.secTitle p {
+  color: hsl(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.secHeading {
+  padding-bottom: 1.5rem;
+}
+
+.btn .icon {
+  margin-left: 0.5rem;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+::selection {
+  background: rgba(56, 134, 131, 0.655);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--PrimaryColor);
+}
+
+.top-to-btm{
+  position: relative;
+  z-index: 2000;
+}
+
+.icon-position{
+  position: fixed;
+  bottom: 40px;
+  right: 25px;
+  z-index: 200;
+}
+
+.icon-style{
+  background-color: transparent;
+  border: 2px solid var(--PrimaryColor);
+  border-radius: 1.5rem;
+  height: 80px;
+  width: 50px;
+  color: var(--PrimaryColor);
+  cursor: pointer;
+  animation: movebtn 3s ease-in-out infinite;
+  transition: all .5s ease-in-out;
+}
+
+@keyframes movebtn {
+  0%{
+    transform: translateY(0px);
+  }
+  25%{
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translateY(0px);
+  }
+  75%{
+    transform: translateY(-20px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 402px){
+  .icon-position{
+    right: 50px;
+  }
+
+  .icon-style{
+    border-radius: 1rem;
+  height: 60px;
+  width: 40px;
+  }
+}
+
+@media screen and (min-width: 556px){
+  .mainContent{
+      grid-template-columns: repeat(2 , 1fr);
+  }
+}

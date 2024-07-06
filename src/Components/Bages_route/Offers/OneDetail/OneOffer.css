@@ -1,0 +1,199 @@
+.ViewOffers {
+    border: 2px solid #000;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.ViewOffers  .description-offers {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 25px;
+    width: 50%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: var(--input2);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 50px;
+    
+}
+@media (max-width: 768px) {
+    .ViewOffers  .description-offers {
+        padding: 10px;
+        margin-top: 25px;
+    }
+}
+
+.ViewOffers  .description-offers p.pre {
+    color: var(--PrimaryColor);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.ViewOffers h1 {
+    color: var(--TextColor2);
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 50px ;
+}
+
+@media (max-width: 768px) {
+    .description-offers h1 {
+        font-size: 35px;
+        margin: 0;
+    }
+}
+
+.description-offers p.desc {
+    color: var(--TextColor);
+    font-weight: 500;
+    line-height: 1.7;
+}
+@media (max-width: 768px) {
+    .description-offers p.desc {
+        line-height: 1.6;
+        margin: 0;
+    }
+}
+
+.description-offers s {
+    color: var(--grayish-blue);
+}
+
+.description-offers .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .description-offers .price {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.description-offers .price p {
+    margin: 0;
+}
+
+.description-offers .price .main-tag {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.description-offers .price .main-tag p:first-of-type {
+    color: var(--PrimaryColor);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.description-offers .price .main-tag p:last-of-type {
+    color: var(--PrimaryColor);
+    /* background-color: var(--pale-orange); */
+    background: var(--BlackColor2);
+    padding: 3px 10px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.description-offers .price s {
+    font-weight: 700;
+}
+
+.description-offers .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 20px;
+}
+@media (max-width: 768px) {
+    .description-offers .buttons {
+        flex-direction: column;
+    }
+    .description-offers .buttons > * {
+        width: 100%;
+    }
+}
+
+.description-offers .buttons .amount {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    width: 190px;
+    background-color: var(--BlackColor2);
+    border-radius: 7px;
+}
+@media (max-width: 992px) {
+    .description-offers .buttons .amount {
+        width: 150px;
+    }
+}
+@media (max-width: 768px) {
+    .description-offers .buttons .amount {
+        width: 100%;
+    }
+}
+
+.description-offers .buttons .amount .minus {
+    display: flex;
+}
+
+.description-offers .buttons .amount p {
+    font-weight: 700;
+    margin: 0;
+}
+
+.description-offers .buttons .add-to-cart {
+    padding: 15px 40px;
+    background-color: var(--PrimaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    flex: 1;
+    transition: 0.3s;
+    border-radius: 5px;
+    border: none !important;
+}
+
+.text-of-bott-go {
+    color: var(--inputfeild);
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .description-offers .buttons .add-to-cart {
+        flex: unset;
+        padding: 15px 20px;
+    }
+}
+.description-offers .buttons .add-to-cart:hover {
+    opacity: 0.6;
+}
+
+.description-offers .buttons .add-to-cart svg path {
+    fill: #fff;
+}

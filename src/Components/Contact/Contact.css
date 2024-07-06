@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.image-all {
+    height: 70vh;
+    background: url('../../im&ve/contact-opt-1.webp');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.image-all .secContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.image-all .secContainer .homeText {
+    text-align: center;
+    width: 70%;
+
+}
+
+.image-all .secContainer .homeText .title {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-align: center;
+}
+
+.image-all .secContainer .homeText .subTitle {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 1rem 0;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.hello-there {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.hello-there .hello {
+    width: 30%;
+    padding: 30px;
+}
+
+.hello-there .hello .text-hello {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color:var(--TextColor);
+    margin: auto;
+}
+
+.hello-there .dis {
+    width: 50%;
+    padding: 10px;
+}
+
+.dis .subTitle {
+    font-size: 17px;
+    text-align: left;
+    color: var(--TextColor);
+    margin: auto;
+    line-height: 25px;
+    word-spacing: 1px;
+    padding-bottom: 10px;
+    font-family: Montserrat !important;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.dis .subTitle span {
+color: var(--PrimaryColor);
+    font-weight: 700;
+}
+
+.Contact-block {
+    margin: auto;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    height: 89.3vh;
+}
+
+.Container-contact {
+    border-radius: 30px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    background: var(--input2);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+.image-of-contact h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 50%;
+    color: var(--TextColor2);
+    text-align: center;
+}
+
+.image-of-contact p {
+    font-size: 18px;
+    text-align: center;
+    color: var(--TextColor2);
+}
+
+
+.Container-contact .image-of-contact {
+    width: 35%;
+    background-image: url('/src/im&ve/sidenav2.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contant-of-contact {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 65%;
+    height: 100%;
+}
+
+.text-contact {
+    border-top-right-radius: 30px;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+    color: #44576d;
+    margin: auto;
+}
+
+.contant-of-contact .coll {
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.contant-of-contact form .input-feild5 {
+    width: 90%;
+    margin: 0.5rem auto;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px 5px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.contant-of-contact form .input-feild5::placeholder {
+    padding-left: 5px;
+}
+
+.btn-readyc3 {
+    width: 60%;
+    height: 3rem;
+    border: 2px solid #000;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 0.4rem 1.5rem;
+    background: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 10px auto;
+}
+
+.btn-readyc3:hover {
+    background-color: var(--background3);
+    color: var(--background);
+    border: none;
+    transition: 0.3s ease-in-out;
+    transform: translateY(-3px);
+    transform: scale(3px);
+}
+
+
+.link2 {
+    color: #44576d;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.link2 a {
+    color: #44576d;
+    margin: 10px 0;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.1s ease;
+}
+
+.link2 a:hover {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
