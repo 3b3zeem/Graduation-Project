@@ -1,5 +1,5 @@
 {
-  "homepage": "https://3b3zeem.github.io/Project_Graduation",
+  "homepage": "https://3b3zeem.github.io/Graduation-Project",
   "name": "g-project",
   "version": "0.1.0",
   "private": true,
@@ -66,9 +66,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

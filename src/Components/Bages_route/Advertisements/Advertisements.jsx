@@ -251,26 +251,26 @@ const Advertisements = () => {
     setCurrentPage(1);
   };
 
-  // Filter advertisements based on selected rating
-  const handleRatingFilterChange = (rating) => {
-    setSelectedRating(rating);
-    const filteredAds = advertisement.filter((ad) => {
-      switch (rating) {
-        case "2-stars":
-          return ad.rating >= 2;
-        case "3-stars":
-          return ad.rating >= 3;
-        case "4-stars":
-          return ad.rating >= 4;
-        case "5-stars":
-          return ad.rating >= 5;
-        default:
-          return true; // Return true for no filter
-      }
-    });
-    setSearchedAdvertisements(filteredAds);
-    setCurrentPage(1);
-  };
+  // // Filter advertisements based on selected rating
+  // const handleRatingFilterChange = (rating) => {
+  //   setSelectedRating(rating);
+  //   const filteredAds = advertisement.filter((ad) => {
+  //     switch (rating) {
+  //       case "2-stars":
+  //         return ad.rating >= 2;
+  //       case "3-stars":
+  //         return ad.rating >= 3;
+  //       case "4-stars":
+  //         return ad.rating >= 4;
+  //       case "5-stars":
+  //         return ad.rating >= 5;
+  //       default:
+  //         return true; // Return true for no filter
+  //     }
+  //   });
+  //   setSearchedAdvertisements(filteredAds);
+  //   setCurrentPage(1);
+  // };
 
   // Function to reset sorting and display all advertisements without sorting
   const handleShowAllAdvertisements = () => {
@@ -523,7 +523,7 @@ const Advertisements = () => {
                   </div>
                 </div>
 
-                {/* Rating */}
+                {/* Rating 
                 <div className="companeys-filters">
                   <div className="aboutcompany-names-filter">
                     <h3>Rating</h3>
@@ -660,7 +660,7 @@ const Advertisements = () => {
                       </label>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Duration */}
                 <div className="companeys-filters">
@@ -793,8 +793,6 @@ const Advertisements = () => {
                 >
                   <VscSettings style={{ fontSize: "23px" }} />
                 </Button>
-
-                {/* الفلترز في الشاشات الصغيرة بتختفي و يظهر زرار لما بتدوس عليه بتظهر الفلاتر هي هي نفس الي فوق */}
                 <Modal show={show} onHide={handleClose}>
                   <Modal.Header closeButton>
                     <Modal.Title>Filters</Modal.Title>
@@ -845,7 +843,7 @@ const Advertisements = () => {
                           </div>
                         </div>
 
-                        {/* Rating */}
+                        {/* Rating 
                         <div className="companeys-filters">
                           <div className="aboutcompany-names-filter">
                             <h3>Rating</h3>
@@ -990,7 +988,7 @@ const Advertisements = () => {
                               </label>
                             </div>
                           </div>
-                        </div>
+                        </div>*/}
 
                         {/* Duration */}
                         <div className="companeys-filters">
